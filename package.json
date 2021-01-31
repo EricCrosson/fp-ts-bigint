@@ -1,6 +1,6 @@
 {
     "name": "fp-ts-bigint",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "BigInt library for fp-ts 2",
     "homepage": "https://github.com/ericcrosson/fp-ts-bigint",
     "bugs": {
@@ -20,7 +20,7 @@
         "dist/src/"
     ],
     "scripts": {
-        "prepublishOnly": "npm run clean && npm run compile",
+        "prepublishOnly": "ts-node scripts/pre-publish",
         "ava": "ava -v",
         "clean": "rimraf --no-glob dist",
         "compile": "tsc",
@@ -38,7 +38,6 @@
         "watch:test": "nodemon -e 'ts json' -x 'npm test || true'",
         "prebuild": "npm run clean",
         "build": "tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.build-es6.json && ts-node ./scripts/build",
-        "prepublishOnly": "ts-node scripts/pre-publish",
         "prerelease": "npm run build",
         "release": "ts-node scripts/release"
     },
