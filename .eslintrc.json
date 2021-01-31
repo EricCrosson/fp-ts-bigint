@@ -18,9 +18,6 @@
             "error",
             "nofunc"
         ],
-        "@typescript-eslint/no-extra-parens": [
-            "error"
-        ],
         "@typescript-eslint/no-explicit-any": "error",
         "@typescript-eslint/ban-ts-comment": "error",
         "@typescript-eslint/await-thenable": "error",

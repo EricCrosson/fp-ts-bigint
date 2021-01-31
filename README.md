@@ -9,14 +9,20 @@
 [Build status]: https://travis-ci.org/ericcrosson/fp-ts-bigint.svg?branch=master
 [Code Coverage]: https://codecov.io/gh/ericcrosson/fp-ts-bigint/branch/master/graph/badge.svg
 
-> BigInt library for fp-ts 2
+> BigInt library for fp-ts
 
-Though `eqBigInt` and `ordBigInt` were merged into [fp-ts](https://github.com/gcanti/fp-ts) in
-[version 2.10.0](https://github.com/gcanti/fp-ts/pull/1385), the
-`bigint` monoids could not be merged without a breaking change as not
-all JavaScript runtimes support the `BigInt` constructor.
+As not every JavaScript runtime supports `BigInt`, this library
+contains opt-in `bigint` functions absent from
+[fp-ts](https://github.com/gcanti/fp-ts):
 
-This library contains opt-in `bigint` functions absent from fp-ts 2.
+- [X] `Eq`
+- [X] `Ord`
+- [X] `Show`
+- [ ] `Field`
+- [X] `semigroupSum`
+- [X] `semigroupProduct`
+- [X] `monoidSum`
+- [X] `monoidProduct`
 
 ## Install
 
@@ -29,11 +35,10 @@ npm install fp-ts-bigint
 Same as fp-ts
 
 ``` typescript
-import { semigroupProductBigInt } from 'fp-ts-bigint/Semigroup'
-import { monoidSumBigInt } from 'fp-ts-bigint/Monoid'
+import * as B from 'fp-ts/bigint'
 
-semigroupProductBigInt.concat(2n, 5n) // => 10n
-monoidSumBigInt.concat(2n, 3n) // => 5n
+B.semigroupSum.concat(2n, 3n) // => 5n
+B.semigroupProduct.concat(2n, 5n) // => 10n
 ```
 
 ## Related
