@@ -1,5 +1,9 @@
 # Changelog
 
+# 2.0.1
+
+- Fix typo on readme
+
 # 2.0.0
 
 - Migrate `eqBigInt` and `ordBigInt` from fp-ts
