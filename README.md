@@ -35,7 +35,7 @@ npm install fp-ts-bigint
 Same as fp-ts
 
 ``` typescript
-import * as B from 'fp-ts/bigint'
+import * as B from 'fp-ts-bigint'
 
 B.semigroupSum.concat(2n, 3n) // => 5n
 B.semigroupProduct.concat(2n, 5n) // => 10n
