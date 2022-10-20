@@ -1,0 +1,21 @@
+{
+  "extends": ["config:js-lib"],
+  "labels": ["dependencies"],
+  "assignees": ["@ericcrosson"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^@size-limit/", "^size-limit$"],
+      "groupName": ["size-limit packages"]
+    },
+    {
+      "matchPackagePatterns": ["ava", "ava-fast-check", "fast-check"],
+      "groupName": ["ava packages"]
+    }
+  ],
+  "timezone": "America/Chicago",
+  "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"]
+}
