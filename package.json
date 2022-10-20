@@ -57,7 +57,7 @@
         "docs-ts": "0.7.0",
         "eslint": "7.19.0",
         "eslint-plugin-ava": "^11.0.0",
-        "eslint-plugin-security": "1.4.0",
+        "eslint-plugin-security": "1.5.0",
         "fast-check": "^2.12.0",
         "fp-ts": "2.9.3",
         "glob": "8.0.3",
