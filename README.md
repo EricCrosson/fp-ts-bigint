@@ -7,9 +7,8 @@
 
 > BigInt library for fp-ts
 
-As not every JavaScript runtime supports `BigInt`, this library
-contains opt-in `bigint` functions absent from
-[fp-ts](https://github.com/gcanti/fp-ts):
+As not every JavaScript runtime supports `BigInt`, this library contains opt-in
+`bigint` functions absent from [fp-ts](https://github.com/gcanti/fp-ts):
 
 - [X] `Eq`
 - [X] `Ord`
