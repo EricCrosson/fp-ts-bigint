@@ -59,7 +59,7 @@
         "eslint-plugin-ava": "^11.0.0",
         "eslint-plugin-security": "1.4.0",
         "fast-check": "^2.12.0",
-        "fp-ts": "2.9.3",
+        "fp-ts": "2.13.1",
         "glob": "8.0.3",
         "lint-staged": "13.0.3",
         "nyc": "15.1.0",
