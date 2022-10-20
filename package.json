@@ -32,7 +32,7 @@
         "test": "nyc ava && npm run docs",
         "prebuild": "npm run clean",
         "build": "tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.build-es6.json && ts-node ./scripts/build",
-        "prepublishOnly": "rm -f fp-ts-bigint-*.tgz && cd dist && npm pack --pack-destination .. && cd .. && mv fp-ts-bigint-*.tgz fp-ts-bigint.tgz"
+        "preparepublish": "rm -f fp-ts-bigint-*.tgz && cd dist && npm pack --pack-destination .. && cd .. && mv fp-ts-bigint-*.tgz fp-ts-bigint.tgz"
     },
     "pre-commit": "lint-staged",
     "lint-staged": {

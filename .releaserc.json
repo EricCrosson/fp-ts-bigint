@@ -23,7 +23,7 @@
     [
       "@semantic-release/exec",
       {
-        "publishCmd": "npm publish fp-ts-bigint.tgz"
+        "publishCmd": "npm run preparepublish && npm publish fp-ts-bigint.tgz"
       }
     ],
     "@semantic-release/git",
