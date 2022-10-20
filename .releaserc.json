@@ -17,13 +17,7 @@
     [
       "@semantic-release/npm",
       {
-        "npmPublish": false
-      }
-    ],
-    [
-      "@semantic-release/exec",
-      {
-        "publishCmd": "npm run preparepublish && npm publish fp-ts-bigint.tgz"
+        "pkgRoot": "dist"
       }
     ],
     "@semantic-release/git",
