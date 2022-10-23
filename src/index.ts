@@ -5,6 +5,7 @@ import * as E from 'fp-ts/Eq'
 import * as O from 'fp-ts/Ord'
 import * as S from 'fp-ts/Show'
 import { Semigroup } from 'fp-ts/Semigroup'
+import { Magma } from 'fp-ts/Magma'
 import { Monoid } from 'fp-ts/Monoid'
 
 /**
@@ -58,6 +59,21 @@ export const semigroupSum: Semigroup<bigint> = {
  */
 export const semigroupProduct: Semigroup<bigint> = {
   concat: (x, y) => x * y
+}
+
+/**
+ * `bigint` magma under subtraction.
+ *
+ * @example
+ * import * as B from 'fp-ts-bigint'
+ *
+ * assert.deepStrictEqual(B.magmaSub.concat(BigInt(5), BigInt(3)), BigInt(2))
+ *
+ * @category instances
+ * @since 2.0.0
+ */
+export const magmaSub: Magma<bigint> = {
+  concat: (x, y) => x - y
 }
 
 /**
