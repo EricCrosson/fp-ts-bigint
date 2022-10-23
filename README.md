@@ -22,6 +22,7 @@ As not every JavaScript runtime supports `BigInt`, this library contains opt-in
 - [X] `semigroupProduct`
 - [X] `monoidSum`
 - [X] `monoidProduct`
+- [X] `magmaSub`
 
 ## Install
 
