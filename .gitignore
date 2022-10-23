@@ -11,3 +11,4 @@ flycheck_*
 /coverage.lcov
 /scratch
 /secrets
+/.direnv/
