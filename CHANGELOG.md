@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.0.4...v2.1.0) (2022-10-23)
+
+
+### Features
+
+* add magmaSub ([5d96376](https://github.com/ericcrosson/fp-ts-bigint/commit/5d96376756d8f55588c48f7d53f5839a4c09e763)), closes [#4](https://github.com/ericcrosson/fp-ts-bigint/issues/4)
+
 ## [2.0.4](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.0.3...v2.0.4) (2022-10-23)
 
 ## [2.0.3](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.0.2...v2.0.3) (2022-10-23)
