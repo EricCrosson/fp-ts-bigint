@@ -16,6 +16,7 @@ Added in v2.0.0
   - [Eq](#eq)
   - [Ord](#ord)
   - [Show](#show)
+  - [magmaSub](#magmasub)
   - [monoidProduct](#monoidproduct)
   - [monoidSum](#monoidsum)
   - [semigroupProduct](#semigroupproduct)
@@ -51,6 +52,26 @@ Added in v2.0.0
 
 ```ts
 export declare const Show: S.Show<bigint>
+```
+
+Added in v2.0.0
+
+## magmaSub
+
+`bigint` magma under subtraction.
+
+**Signature**
+
+```ts
+export declare const magmaSub: Magma<bigint>
+```
+
+**Example**
+
+```ts
+import * as B from 'fp-ts-bigint'
+
+assert.deepStrictEqual(B.magmaSub.concat(BigInt(5), BigInt(3)), BigInt(2))
 ```
 
 Added in v2.0.0
