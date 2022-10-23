@@ -22,14 +22,14 @@
     "scripts": {
         "ava": "ava -v",
         "clean": "rimraf --no-glob dist",
-        "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "coverage": "c8 report --include 'src/**/*.ts' --all --reporter=text-lcov > coverage.lcov && codecov",
         "docs": "docs-ts",
         "lint": "eslint --ext ts .",
         "lint:fix": "eslint --ext ts --fix .",
         "lint-staged": "lint-staged",
         "format": "prettier --list-different src/**/*.ts",
         "format:fix": "prettier --write src/**/*.ts",
-        "test": "nyc ava && npm run docs",
+        "test": "c8 --include 'src/**/*.ts' --100 ava && npm run docs",
         "prebuild": "npm run clean",
         "build": "tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.build-es6.json && ts-node ./scripts/build"
     },
@@ -53,6 +53,7 @@
         "@typescript-eslint/parser": "5.40.1",
         "ava": "4.3.3",
         "ava-fast-check": "6.0.0",
+        "c8": "7.12.0",
         "codecov": "3.8.2",
         "docs-ts": "0.7.0",
         "eslint": "8.26.0",
@@ -62,7 +63,6 @@
         "fp-ts": "2.13.1",
         "glob": "8.0.3",
         "lint-staged": "13.0.3",
-        "nyc": "15.1.0",
         "pre-commit": "1.2.2",
         "prettier": "2.7.1",
         "rimraf": "3.0.2",
@@ -77,17 +77,6 @@
         "files": [
             "!dist/**/*.d.ts",
             "test/**/*.ts"
-        ],
-        "require": [
-            "ts-node/register"
-        ]
-    },
-    "nyc": {
-        "extension": [
-            ".ts"
-        ],
-        "include": [
-            "src/*.ts"
         ],
         "require": [
             "ts-node/register"
