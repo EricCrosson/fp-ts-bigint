@@ -1,3 +1,5 @@
+## [2.1.1](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.0...v2.1.1) (2022-10-23)
+
 # [2.1.0](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.0.4...v2.1.0) (2022-10-23)
 
 
