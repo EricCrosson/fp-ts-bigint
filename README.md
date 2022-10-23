@@ -1,11 +1,13 @@
 # fp-ts-bigint
-[![License][]](https://opensource.org/licenses/ISC)
+[![Release][]](https://github.com/EricCrosson/fp-ts-bigint/actions/workflows/release.yml)
 [![NPM Package][]](https://npmjs.org/package/fp-ts-bigint)
 [![Code Coverage][]](https://codecov.io/gh/EricCrosson/fp-ts-bigint)
+[![License][]](https://opensource.org/licenses/ISC)
 
-[License]: https://img.shields.io/badge/License-ISC-blue.svg
-[NPM Package]: https://img.shields.io/npm/v/fp-ts-bigint.svg
+[release]: https://github.com/EricCrosson/fp-ts-bigint/actions/workflows/release.yml/badge.svg?branch=master&event=push
+[npm package]: https://img.shields.io/npm/v/fp-ts-bigint.svg
 [code coverage]: https://codecov.io/gh/EricCrosson/fp-ts-bigint/branch/master/graph/badge.svg
+[license]: https://img.shields.io/badge/License-ISC-blue.svg
 
 > BigInt library for fp-ts
 
