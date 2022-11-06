@@ -56,7 +56,7 @@
         "c8": "7.12.0",
         "codecov": "3.8.2",
         "docs-ts": "0.7.0",
-        "eslint": "8.26.0",
+        "eslint": "8.27.0",
         "eslint-plugin-ava": "13.2.0",
         "eslint-plugin-security": "1.5.0",
         "fast-check": "3.3.0",
