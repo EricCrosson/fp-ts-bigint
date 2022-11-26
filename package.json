@@ -1,89 +1,65 @@
 {
-    "name": "fp-ts-bigint",
-    "version": "2.0.2-beta.2",
-    "description": "BigInt library for fp-ts",
-    "homepage": "https://github.com/ericcrosson/fp-ts-bigint",
-    "bugs": {
-        "url": "https://github.com/ericcrosson/fp-ts-bigint/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ericcrosson/fp-ts-bigint.git"
-    },
-    "license": "ISC",
-    "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/EricCrosson)",
-    "main": "src/index.js",
-    "module": "es6/index.js",
-    "sideEffects": false,
-    "types": "dist/src/index.d.ts",
-    "files": [
-        "dist/src/"
+  "name": "fp-ts-bigint",
+  "version": "0.0.0-semantic-release-managed",
+  "description": "BigInt library for fp-ts",
+  "homepage": "https://github.com/ericcrosson/fp-ts-bigint",
+  "bugs": {
+    "url": "https://github.com/ericcrosson/fp-ts-bigint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericcrosson/fp-ts-bigint.git"
+  },
+  "license": "ISC",
+  "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/EricCrosson)",
+  "main": "src/index.js",
+  "module": "es6/index.js",
+  "sideEffects": false,
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src/"
+  ],
+  "scripts": {
+    "ava": "ava -v",
+    "clean": "rm -rf -- dist",
+    "docs": "docs-ts",
+    "test": "c8 ava && npm run docs",
+    "prebuild": "npm run clean",
+    "build": "tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.build-es6.json && ts-node ./scripts/build"
+  },
+  "peerDependencies": {
+    "fp-ts": ">= 2.8.3"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@types/glob": "8.0.0",
+    "ava": "5.1.0",
+    "ava-fast-check": "6.0.0",
+    "c8": "7.12.0",
+    "codecov": "3.8.2",
+    "docs-ts": "0.7.0",
+    "fast-check": "3.3.0",
+    "fp-ts": "2.13.1",
+    "glob": "8.0.3",
+    "semantic-release": "19.0.5",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.3"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
     ],
-    "scripts": {
-        "ava": "ava -v",
-        "clean": "rimraf --no-glob dist",
-        "coverage": "c8 report --include 'src/**/*.ts' --all --reporter=text-lcov > coverage.lcov && codecov",
-        "docs": "docs-ts",
-        "lint": "eslint --ext ts .",
-        "lint:fix": "eslint --ext ts --fix .",
-        "lint-staged": "lint-staged",
-        "format": "prettier --list-different src/**/*.ts",
-        "format:fix": "prettier --write src/**/*.ts",
-        "test": "c8 --include 'src/**/*.ts' --100 ava && npm run docs",
-        "prebuild": "npm run clean",
-        "build": "tsc -p ./tsconfig.build.json && tsc -p ./tsconfig.build-es6.json && ts-node ./scripts/build"
-    },
-    "pre-commit": "lint-staged",
-    "lint-staged": {
-        "*.ts": [
-            "eslint --fix",
-            "prettier --write"
-        ]
-    },
-    "peerDependencies": {
-        "fp-ts": ">= 2.8.3"
-    },
-    "devDependencies": {
-        "@semantic-release/changelog": "6.0.1",
-        "@semantic-release/git": "10.0.1",
-        "@semantic-release/github": "8.0.6",
-        "@semantic-release/npm": "9.0.1",
-        "@types/glob": "8.0.0",
-        "@typescript-eslint/eslint-plugin": "5.44.0",
-        "@typescript-eslint/parser": "5.44.0",
-        "ava": "5.1.0",
-        "ava-fast-check": "6.0.0",
-        "c8": "7.12.0",
-        "codecov": "3.8.2",
-        "docs-ts": "0.7.0",
-        "eslint": "8.28.0",
-        "eslint-plugin-ava": "13.2.0",
-        "eslint-plugin-security": "1.5.0",
-        "fast-check": "3.3.0",
-        "fp-ts": "2.13.1",
-        "glob": "8.0.3",
-        "lint-staged": "13.0.4",
-        "pre-commit": "1.2.2",
-        "prettier": "2.8.0",
-        "rimraf": "3.0.2",
-        "semantic-release": "19.0.5",
-        "ts-node": "10.9.1",
-        "typescript": "4.9.3"
-    },
-    "ava": {
-        "extensions": [
-            "ts"
-        ],
-        "files": [
-            "!dist/**/*.d.ts",
-            "test/**/*.ts"
-        ],
-        "require": [
-            "ts-node/register"
-        ]
-    },
-    "keywords": [
-        "fp-ts",
-        "bigint"
+    "files": [
+      "!dist/**/*.d.ts",
+      "test/**/*.ts"
+    ],
+    "require": [
+      "ts-node/register"
     ]
+  },
+  "keywords": [
+    "fp-ts",
+    "bigint"
+  ]
 }

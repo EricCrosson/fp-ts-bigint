@@ -30,20 +30,11 @@ jobs:
         run: |
           npm ci
 
-      - name: Lint code
-        run: npm run lint
-
-      - name: Format code
-        run: npm run format
-
       - name: Compile TypeScript
         run: npm run build
 
       - name: Test
         run: npm test
-
-      - name: Upload code coverage
-        run: npm run coverage
 
       - name: Release
         env:
