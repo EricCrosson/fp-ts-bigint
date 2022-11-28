@@ -12,7 +12,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts/-2, lts/-1, lts/*]
+        node-version:
+          # The native test runner is not yet in lts/-2
+          # - lts/-2
+          - lts/-1
+          # There's a bug in Node.js 18 to be fixed Nov 29, so don't test with v18
+          # - lts/*
 
     steps:
       - name: Checkout
