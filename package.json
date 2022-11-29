@@ -31,7 +31,7 @@
     "fp-ts": ">= 2.8.3"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/changelog": "6.0.2",
     "@semantic-release/git": "10.0.1",
     "@types/glob": "8.0.0",
     "@types/node": "18.11.9",
