@@ -29,20 +29,3 @@ test("should satisfy symmetry", () => {
       endOnFailure: true,
     };
 });
-
-test("should satisfy transivity", () => {
-  fc.assert(
-    fc.property(fc.bigInt(), fc.bigInt(), fc.bigInt(), (a, b, c) => {
-      if (B.Eq.equals(a, b) && B.Eq.equals(b, c)) {
-        assert(B.Eq.equals(a, c));
-      } else {
-        assert(!B.Eq.equals(a, c));
-      }
-    }),
-    {
-      verbose: true,
-      numRuns: 100,
-      endOnFailure: true,
-    }
-  );
-});
