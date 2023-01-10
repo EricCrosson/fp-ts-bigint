@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.1...v2.1.2) (2023-01-10)
+
+
+### Bug Fixes
+
+* **ci:** use typescript-action for ci and cd ([9ac4aa0](https://github.com/ericcrosson/fp-ts-bigint/commit/9ac4aa0b12b5c7fb4bf19be0cc3c093df7df7cef))
+
 ## [2.1.1](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.0...v2.1.1) (2022-10-23)
 
 # [2.1.0](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.0.4...v2.1.0) (2022-10-23)
