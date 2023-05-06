@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.2...v2.1.3) (2023-05-06)
+
+
+### Bug Fixes
+
+* **deps:** migrate to semantic-release-action/typescript ([51c9c45](https://github.com/ericcrosson/fp-ts-bigint/commit/51c9c45d37410756428310e72d3ef203b468d1a2))
+
 ## [2.1.2](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.1...v2.1.2) (2023-01-10)
 
 
