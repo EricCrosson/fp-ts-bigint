@@ -1,7 +1,7 @@
 import * as TE from "fp-ts/TaskEither";
 import { flow } from "fp-ts/function";
 import * as fs from "fs";
-import G from "glob";
+import * as G from "glob";
 
 export interface FileSystem {
   readonly readFile: (path: string) => TE.TaskEither<Error, string>;
@@ -32,7 +32,9 @@ const copyFile = TE.taskify<
   NodeJS.ErrnoException,
   void
 >(fs.copyFile);
-const glob = TE.taskify<string, Error, ReadonlyArray<string>>(G);
+const glob = TE.taskify<string, Error, ReadonlyArray<string>>((s: string) =>
+  G.glob(s)
+);
 const mkdirTE = TE.taskify(fs.mkdir);
 const moveFile = TE.taskify<
   fs.PathLike,
