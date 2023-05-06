@@ -31,7 +31,7 @@
     "fp-ts": ">= 2.8.3"
   },
   "devDependencies": {
-    "@types/glob": "8.0.0",
+    "@types/glob": "8.1.0",
     "@types/node": "18.16.5",
     "c8": "7.13.0",
     "docs-ts": "0.7.2",
