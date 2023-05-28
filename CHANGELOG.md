@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.3...v2.1.4) (2023-05-28)
+
+
+### Bug Fixes
+
+* correct whitelist of files to publish ([89bb401](https://github.com/ericcrosson/fp-ts-bigint/commit/89bb401e43ea5c0e4c5ec61d9e330df0cbd35287))
+
 ## [2.1.3](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.2...v2.1.3) (2023-05-06)
 
 
