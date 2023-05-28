@@ -17,7 +17,8 @@
   "sideEffects": false,
   "types": "dist/src/index.d.ts",
   "files": [
-    "dist/src/"
+    "dist/es6/",
+    "dist/lib/"
   ],
   "scripts": {
     "clean": "rm -rf -- dist",
