@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/glob": "8.1.0",
-    "@types/node": "18.18.3",
+    "@types/node": "18.18.4",
     "c8": "8.0.1",
     "docs-ts": "0.8.0",
     "fast-check": "3.13.1",
