@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.4...v2.1.5) (2023-12-12)
+
+
+### Bug Fixes
+
+* correct path to CommonJS entrypoint in package manifest ([af5a097](https://github.com/ericcrosson/fp-ts-bigint/commit/af5a097e5a3e007e4d81c9dcaba0fb23fb82f50e))
+
 ## [2.1.4](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.3...v2.1.4) (2023-05-28)
 
 
