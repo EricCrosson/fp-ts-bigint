@@ -14,7 +14,7 @@
   "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/EricCrosson)",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
-  "module": "es6/index.js",
+  "module": "dist/es6/index.js",
   "sideEffects": false,
   "files": [
     "dist/es6/",
