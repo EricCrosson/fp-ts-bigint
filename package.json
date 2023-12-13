@@ -1,6 +1,6 @@
 {
   "name": "fp-ts-bigint",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "BigInt library for fp-ts",
   "homepage": "https://github.com/ericcrosson/fp-ts-bigint",
   "bugs": {

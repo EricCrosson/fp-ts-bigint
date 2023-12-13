@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.5...v2.1.6) (2023-12-13)
+
+
+### Bug Fixes
+
+* correct path to ES module entrypoint in package manifest ([97bfa98](https://github.com/ericcrosson/fp-ts-bigint/commit/97bfa98cc810dd82d570f850af7ae195eb8b3c6e))
+
 ## [2.1.5](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.4...v2.1.5) (2023-12-12)
 
 
