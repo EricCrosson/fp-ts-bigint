@@ -40,7 +40,7 @@
     "fp-ts": "2.16.5",
     "glob": "10.3.12",
     "ts-node": "10.9.2",
-    "typescript": "5.4.4"
+    "typescript": "5.4.5"
   },
   "keywords": [
     "fp-ts",
