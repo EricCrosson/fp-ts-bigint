@@ -33,7 +33,7 @@
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            nodejs-16_x
+            nodejs
           ];
           shellHook = ''
             export PATH="$PWD/node_modules/.bin:$PATH"
