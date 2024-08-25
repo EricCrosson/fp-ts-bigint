@@ -36,7 +36,7 @@
     "@types/node": "20.16.1",
     "c8": "10.1.2",
     "docs-ts": "0.8.0",
-    "fast-check": "3.21.0",
+    "fast-check": "3.22.0",
     "glob": "11.0.0",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
