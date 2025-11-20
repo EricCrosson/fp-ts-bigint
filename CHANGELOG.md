@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.6...v2.1.7) (2025-11-20)
+
+
+### Bug Fixes
+
+* force a release ([2ab3679](https://github.com/ericcrosson/fp-ts-bigint/commit/2ab3679cde4e8024b8cead24adcb08b435903540)), closes [#360](https://github.com/ericcrosson/fp-ts-bigint/issues/360)
+
 ## [2.1.6](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.5...v2.1.6) (2023-12-13)
 
 
