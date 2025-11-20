@@ -1,3 +1,10 @@
+## [2.1.8](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.7...v2.1.8) (2025-11-20)
+
+
+### Reverts
+
+* Revert "ci: test release with v3.2.0-beta.1" ([f055752](https://github.com/ericcrosson/fp-ts-bigint/commit/f055752bfd2bd1ac9eb4969f58591b7a4f26ec05))
+
 ## [2.1.7](https://github.com/ericcrosson/fp-ts-bigint/compare/v2.1.6...v2.1.7) (2025-11-20)
 
 
